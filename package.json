@@ -1,0 +1,39 @@
+{
+  "name": "universal-mail",
+  "version": "0.0.1",
+  "description": "Universal mail managers and connectors",
+  "main": "index.js",
+  "types": "types.d.ts",
+  "engines": {
+    "node": "18 || 20 || 21 || 22"
+  },
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "npm run lint",
+    "types": "tsc -p tsconfig.json",
+    "lint": "eslint . && prettier --check \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Universal-Code-Modules/universal-mail.git"
+  },
+  "keywords": [
+    "modules"
+  ],
+  "author": "Leon Polak <lp0808@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Universal-Code-Modules/issues"
+  },
+  "homepage": "https://github.com/Universal-Code-Modules/#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.1",
+    "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  }
+}
